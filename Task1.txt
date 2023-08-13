@@ -1,0 +1,37 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir folder
+3) Зайти в папку - cd folder
+4) Создать 3-и папки - mkdir folder1 folder2 folder3
+5) Зайти в любую папку -  cd folder1
+6) Создать 5 файлов (3 txt, 2 json) - touch text2.txt text3.nxt Json1.gson Json2.gson
+7) Создать 3-и папки - mkdir f1 f2 f3
+8) Вывод список содержимого в папке - ls -La
+9) Открыть любой txt файл - cat text1.txt
+10) Написать любой текст в файл txt - echo "Hello word" >> text1.txt
+                               либо cat > text1.txt нажимаем на клавишу "Inter" 
+                                    Hello word нажимаем Ctrl + D
+11) Выйти из папки на уровень выше - cd ..
+12) Скопировать любые 2 файла, которые я создал, в любую другую папку - cp folder1/text1.txt folder2/text1.txt
+                                                                        cp folder1/text2.txt folder2/text2.txt
+13) Перенести любые 2 файла, которые я создал, в любую другую папку - mv folder2/text1.txt folder3/text5.txt
+                                                                      mv folder2/text10.txt folder3/text10.txt
+14) Найти файл по имени -  find . -name "text.10.txt"
+15) Просмотреть содержимое в реальном времени - grep "Hello" text1.txt
+16) Вывести несколько первых строк из текстового файла - head -n 2 text1.txt
+17) Вывести несколько последних строк из текстового файла tail -n 2 text1.txt
+18) Просмотреть содержимое длинного файла - less text1.txt , прокрутить текст вверх-вниз inter и y, возврат в терминал q
+19) Вывести дату и время - date
+
+Задание * 
+1) Отправить http запрос на сервер - curl 'http://162.55.220.72:5005/get_method?name=Ruslan&age=45'
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 
+    - создаю текстовый файл myscript.txt
+    - записываю в него скрипт #!/bin/bash
+                              cd folder
+                              mkdir folder11 folder22 folder33
+                              cd folder11
+                              touch text22.txt text33.nxt Json11.gson Json22.gson
+                              mkdir f11 f22 f33
+                              ls -La
+                              cd ..
+                              mv folder11/text22.txt folder22/text22.txt
