@@ -30,8 +30,9 @@
                               cd folder
                               mkdir folder11 folder22 folder33
                               cd folder11
-                              touch text22.txt text33.nxt Json11.gson Json22.gson
+                              touch text22.txt text33.nxt Json11.json Json22.json
                               mkdir f11 f22 f33
                               ls -La
                               cd ..
                               mv folder11/text22.txt folder22/text22.txt
+    - команда на исполнение скрипта ./myscript.txt
